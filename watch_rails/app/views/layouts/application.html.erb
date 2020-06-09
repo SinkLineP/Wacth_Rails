@@ -7,11 +7,26 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+
+
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 </head>
 
   <body>
-    <%= yield %>
+    <div class="content">
+      <%= yield %>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <script src="<%= asset_path 'application' %>">
+    </script>
   </body>
 </html>

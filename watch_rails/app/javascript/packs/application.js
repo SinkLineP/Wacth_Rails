@@ -19,3 +19,18 @@ import 'bootstrap/dist/js/bootstrap'
 import 'bootstrap/dist/css/bootstrap'
 import '../stylesheets/application'
 import '../stylesheets/main'
+
+
+import "../styles/application";
+import './jqery-1.11.0.min.js'
+import './bootstrap.min.js';
+import './typeahead.bundle'
+import './jquery.easydropdown';
+import './easydrop';
+import './memenu';
+import './mem';
+import './responsiveslides.min';
+import './responsive';
+import './imagezoom';
+import './jquery.flexslider';
+import './flexs';
