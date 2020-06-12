@@ -1,5 +1,6 @@
-@import "bootstrap/scss/bootstrap.scss";
-@import "components/style.scss";
-@import "components/mystyle.scss";
-@import "components/memenu.scss";
-@import "components/flexslider.scss";
+
+@import "./style.scss";
+@import "./mystyle.scss";
+@import "./memenu.scss";
+@import "./flexslider.scss";
+@import "~bootstrap/scss/bootstrap.scss";
