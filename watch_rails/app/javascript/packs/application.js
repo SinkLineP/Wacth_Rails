@@ -24,13 +24,13 @@ import '../stylesheets/application.scss'
 
 // import './jqery-1.11.0.min.js'
 // import './bootstrap.min.js';
-// import './typeahead.bundle'
-// import './jquery.easydropdown';
-// import './easydrop';
-// import './memenu';
-// import './mem';
-// import './responsiveslides.min';
-// import './responsive';
-// import './imagezoom';
-// import './jquery.flexslider';
-// import './flexs';
+import './typeahead.bundle'
+import './jquery.easydropdown';
+import './easydrop';
+import './memenu';
+import './mem';
+import './responsiveslides.min';
+import './responsive';
+import './imagezoom';
+import './jquery.flexslider';
+import './flexs';
