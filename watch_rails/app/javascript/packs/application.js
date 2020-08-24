@@ -33,4 +33,5 @@ import './responsiveslides.min';
 import './responsive';
 import './imagezoom';
 import './jquery.flexslider';
+import './my';
 // import './flexs';
