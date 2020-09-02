@@ -10,7 +10,8 @@ RSpec.describe SearchController, type: :controller do
 
 		context "search product" do
 			it "find product in db" do
-				res = JSON.parse(response.body).first.values
+				res = JSON.parse(response.body)
+
 				expect(res).to eq(product.title, product.id)
 			end
 		
