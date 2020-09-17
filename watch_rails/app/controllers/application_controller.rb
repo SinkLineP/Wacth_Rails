@@ -10,7 +10,10 @@ class ApplicationController < ActionController::Base
     end
 
     def cart_total
-
+        cart_items
+            .joins(:product)
+            .select('(cart_items.quantity * products.price) as total')
+            .sum { |x| x[:total] }
     end
     
     helper_method :current_cart, :cart_items, :cart_total

@@ -39,4 +39,5 @@ import './jquery.flexslider';
 import './my';
 import './jquery.easy-autocomplete';
 import './easyautocomplite';
+// import './simpleCart';
 // import './flexs';

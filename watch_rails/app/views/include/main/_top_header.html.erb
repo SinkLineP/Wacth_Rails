@@ -57,8 +57,9 @@
       <div class="col-md-6 top-header-left">
         <div class="cart box_1">
           <a href="/cart" onclick="getCart(); return false;">
-            <div class="total">  
-              <%= image_pack_tag('media/styles/images/cart-1.png', alt: "") %>
+            <div class="total"> 
+
+              <%= image_pack_tag('media/packs/images/cart-1.png', alt: "") %>
               <% if cart_items.any? %>
                 <span class="simpleCart_total">
                   <%= format("%.2f", cart_total) %> $
@@ -66,6 +67,7 @@
               <% else %>
                 <span class="simpleCart_total">Empty Cart</span>  
               <% end %>
+            
             </div>
           </a>
           <div class="clearfix"></div>
