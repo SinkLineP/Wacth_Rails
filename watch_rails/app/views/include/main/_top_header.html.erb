@@ -3,7 +3,7 @@
     <div class="top-header-main">
       <div class="col-md-6 top-header-left">
         <div class="drop">
-         <div class="box">
+          <div class="box">
             <select tabindex="4" class="dropdown" >
               <option value="" class="label">Dollar:</option>
               <option value="1">Dollar</option>
@@ -19,7 +19,15 @@
             </select>
           </div>
           <div class="btn-group">
-            <a class="dropdown-toggle" data-toggle="dropdown" > Account <span></span></a>
+            <a href="#" class="" data-toggle="dropdown">
+              <span>
+                <% if user_signed_in? %>
+                  Log out
+                <% else %>
+                  Log in 
+                <% end %>   
+              </span>
+            </a>
             <ul class="dropdown-menu">
               <% if user_signed_in? %>
                 <% if current_user.try(:admin?) %>
@@ -51,14 +59,14 @@
               <% end %>
             </ul>
           </div>
+          
           <div class="clearfix"></div>
         </div>
       </div>
-      <div class="col-md-6 top-header-left">
+      <div class="">
         <div class="cart box_1">
-          <a href="/cart" onclick="getCart(); return false;">
-            <div class="total"> 
-
+          <a href="/cart" onclick="getCart(); return false;", data-turbolinks="false">
+            <div class="total">
               <%= image_pack_tag('media/packs/images/cart-1.png', alt: "") %>
               <% if cart_items.any? %>
                 <span class="simpleCart_total">
@@ -67,7 +75,6 @@
               <% else %>
                 <span class="simpleCart_total">Empty Cart</span>  
               <% end %>
-            
             </div>
           </a>
           <div class="clearfix"></div>

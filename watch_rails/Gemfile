@@ -28,6 +28,14 @@ gem 'webpacker', '~> 4.0'
 gem 'meta-tags'
 gem 'breadcrumbs_on_rails'
 gem 'ransack'
+gem 'pundit'
+gem 'responders'
+gem 'active_model_serializers'
+gem 'jquery-turbolinks'
+gem 'railties', '~> 6.0', '>= 6.0.2.1'
+gem 'omniauth'
+gem 'omniauth-facebook'
+
 
 group :development, :test do
   gem 'factory_bot'
