@@ -1,9 +1,9 @@
-class ItemsController < ApplicationController
+class CartItemsController < ApplicationController
     include CartsHelper
     layout false
   
     def create
-      cart_items.create(item_params)
+      cart_items.create!(item_params)
     end 
   
     def destroy

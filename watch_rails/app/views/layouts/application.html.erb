@@ -38,7 +38,7 @@
 <!-- notification -->
 
 <!-- Start logo -->
-<div class="logo">
+  <div class="logo">
       <%= link_to root_path, data: {turbolinks: false} do %>
       <h1> Luxury Watches</h1>
       <% end %>
@@ -49,9 +49,9 @@
     <%= render 'include/main/bottom_header' %>
 <!--bottom-header-->
 
-    <div class="content">
-      <%= yield %>
-    </div>
+<div class="content">
+  <%= yield %>
+</div>
   
 <!--footer-->
 <%= render 'include/main/footer' %>

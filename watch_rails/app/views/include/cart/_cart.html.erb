@@ -14,7 +14,7 @@
         <tbody>
         <% qty = [] %>
         <% sum = [] %>
-        <% products.map do |item| %>
+        <% products.each do |item| %>
           <tr>
             <td>
               <% if item.product.img.nil? %>

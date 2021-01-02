@@ -102,7 +102,7 @@
               </div>
 
               <%= link_to 'ADD TO CART',
-                          cart_items_path,
+                          cart_cart_items_path,
                           remote: true,
                           data: { method: :post, id: @product.id },
                           class: "add-cart item_add add-to-cart-link",

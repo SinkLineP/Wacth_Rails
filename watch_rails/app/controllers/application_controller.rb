@@ -1,9 +1,11 @@
-
+require "application_responder"
 
 class ApplicationController < ActionController::Base
+  self.responder = ApplicationResponder
+  respond_to :html
 
   protect_from_forgery
-
+  include Pundit
 
   def current_cart
     @current_cart ||= begin
@@ -34,4 +36,5 @@ class ApplicationController < ActionController::Base
     flash[:alert] = "You are not authorized to perform this action."
     redirect_to(request.referrer || root_path)
   end
+  
 end

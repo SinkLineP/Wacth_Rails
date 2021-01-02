@@ -1,13 +1,14 @@
+# frozen_string_literal: true
 require 'rails_helper'
 
-RSpec.describe ItemsController, type: :controller do
-    render_views
+RSpec.describe CartItemsController, type: :controller do
+  render_views
 
-    let(:user) { create :user }
-    let(:product) { create :product }
-    let(:cart) { create :cart, user: user }
-    let!(:item) { create :cart_item, cart: cart, product: product }
-    let(:create_params) { { quantity: 1, product_id: product.id } }
+  let(:user)          {create :user}
+  let(:product)       {create :product}
+  let(:cart)          {create :cart, user: user}
+  let!(:item)         {create :cart_item, cart: cart, product: product}
+  let(:create_params) { { quantity: 1, product_id: product.id } }
     
     describe "POST #create" do
         subject { post :create, params: create_params }
