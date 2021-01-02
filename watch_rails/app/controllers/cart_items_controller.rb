@@ -3,7 +3,7 @@ class CartItemsController < ApplicationController
     layout false
   
     def create
-      cart_items.create!(item_params)
+      cart_items.create(item_params)
     end 
   
     def destroy

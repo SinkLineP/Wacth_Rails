@@ -31,6 +31,7 @@ RSpec.describe CartItemsController, type: :controller do
             it 'does not save the items' do
                 sign_in(user)
                 expect { subject }.to_not change(user.cart.cart_items, :count)  
+                #expect { subject }.to_not change(user.cart.cart_items, :count)
             end  
         end  
         
