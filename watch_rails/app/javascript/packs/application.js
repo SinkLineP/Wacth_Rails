@@ -20,22 +20,22 @@ require.context('./images', true)
 // const imagePath = (name) => images(name, true)
 // import 'bootstrap/dist/js/bootstrap'
 // import 'bootstrap/dist/css/bootstrap'
-import '../stylesheets/application.scss'
+import '../styles/application.scss'
 
 
 
 
 // import './jqery-1.11.0.min.js'
 // import './bootstrap.min.js';
-import './typeahead.bundle'
+// import './typeahead.bundle'
 import './jquery.easydropdown';
 import './easydrop';
 import './memenu';
 import './mem';
-import './responsiveslides.min';
-import './responsive';
-import './imagezoom';
-import './jquery.flexslider';
+// import './responsiveslides.min';
+// import './responsive';
+// import './imagezoom';
+// import './jquery.flexslider';
 import './my';
 import './jquery.easy-autocomplete';
 import './easyautocomplite';
